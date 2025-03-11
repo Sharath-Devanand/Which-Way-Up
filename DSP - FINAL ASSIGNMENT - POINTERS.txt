@@ -1,0 +1,37 @@
+DSP - FINAL ASSIGNMENT - POINTERS
+
+Making training-Data
+	Making Random Sub-images:
+		Function - User defined - takes all images, output size
+			image = pick random image from sample
+			find valid_x, valid_y = shape - output-size
+			random x = valid_x, y = randint(0,valid_y)
+			sub_image = image[x:x+n_pixels,y:y+n_pixels]
+	
+	PatchExtractor - Scikit-learn
+		sklearn.feature_extraction import image
+		patch_extractor=image.PatchExtractor(patch_size=(),max_patches=,ranom_state)
+		sub_images = patch_extractor.transform(images)
+
+Use matshow over imshow for exact values
+
+Rotation
+numpy.rot90(img,k=#rotations) - Anti-clockwise
+
+Reshaping from images to feature vectors
+
+image.reshape(-1)
+
+Multiple images
+imageS.reshape(#images,-1)
+
+
+VS Code Extension - GitHub Copilot
+
+
+
+Start with comment - Documentation of the goal of the python file
+
+argparsers
+
+black extension
