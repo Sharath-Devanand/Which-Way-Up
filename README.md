@@ -27,7 +27,6 @@ Key hyperparameters tuned in the MLP included:
 
 The following tables summarize the performance for different pixel sizes and hyperparameter configurations:
 
----
 
 ### Comparison of Classifier Performance
 
@@ -38,7 +37,6 @@ The following tables summarize the performance for different pixel sizes and hyp
 | RFC     | 71.8%          | 94.4%          | 93.9%          |
 | MLP     | 57.7%          | 78.2%          | 97.3%          |
 
----
 
 ### Performance with Different Hidden Layer Configurations
 
@@ -50,7 +48,6 @@ The following tables summarize the performance for different pixel sizes and hyp
 | 50, 50        | 46.9%          | 63.5%          | 93.9%          |
 | 200, 200      | 50.1%          | 71.6%          | 94.8%          |
 
----
 
 ### Activation Function Comparison
 
@@ -61,7 +58,6 @@ The following tables summarize the performance for different pixel sizes and hyp
 | Logistic        | 34.4%          | 68.0%          | 95.6%          |
 | Identity        | 35.0%          | 45.8%          | 85.7%          |
 
----
 
 ### Effect of Regularization (Alpha)
 
@@ -72,7 +68,6 @@ The following tables summarize the performance for different pixel sizes and hyp
 | 0.001| 48.3%         | 70.0%          | 96.0%          |
 | 0.0001| 48.0%        | 71.5%          | 95.6%          |
 
----
 
 The analysis shows that accuracy improves with higher pixel resolutions. However, even at lower pixel sizes (30×30), the MLP model demonstrated robustness and adaptability, achieving decent accuracy with proper tuning of hyperparameters. The confusion matrix (shown in Figure 1) highlights the challenges of lower-resolution images, where misclassification rates rise due to the lack of sufficient features to distinguish between orientations.
 
